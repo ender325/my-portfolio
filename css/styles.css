@@ -97,14 +97,17 @@ section {
   font-weight: 700;
   margin-bottom: 2.5rem;
   position: relative;
-  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 0;
+  left: 25%;
   width: 50%;
   height: 4px;
   background: var(--color-primary);
@@ -260,13 +263,20 @@ section {
    ========================================================================== */
 .about-section {
   background-color: var(--color-bg-alt);
+  text-align: center;
+}
+
+.about-content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 .about-content p {
   font-size: 1.125rem;
   color: var(--color-text-muted);
   margin-bottom: 1.25rem;
-  max-width: 800px;
 }
 
 /* ==========================================================================
@@ -288,4 +298,85 @@ section {
 .skill-card h3 {
   font-size: 1.25rem;
   color: var(--color-primary);
-  margin-
+  margin-bottom: 1.25rem;
+}
+
+.skill-card ul {
+  list-style-type: none;
+}
+
+.skill-card li {
+  color: var(--color-text-muted);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-card li:last-child {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
+.projects-section {
+  background-color: var(--color-bg-alt);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.badge-active {
+  background-color: rgba(5, 150, 105, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+.badge-planned {
+  background-color: rgba(217, 119, 6, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-description {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tags
