@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Kevin Rodríguez - Holberton Coding School Student and Software Developer">
+  <title>Kevin Rodríguez | Software Developer Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="Kevin Rodríguez Home">Kevin Rodríguez</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" aria-label="Introduction">
+      <div class="container hero-container">
+        <span class="badge">Holberton Coding School Student</span>
+        <h1 class="hero-title">Hi, I'm Kevin Rodríguez.</h1>
+        <p class="hero-subtitle">
+          I'm a Holberton Coding School student passionate about systems programming, clean code, and solving complex technical challenges. Take a look around my work and get in touch!
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            Based in San Juan, Puerto Rico, I am a bilingual software development student currently studying at Holberton Coding School[cite: 1]. My focus spans low-level programming, C, Unix system fundamentals, and software maintenance[cite: 1, 2].
+          </p>
+          <p>
+            With a background that includes sole caregiving and social work skills, I bring strong empathy, adaptability, clear communication, and structured problem-solving to engineering teams[cite: 1]. Beyond coding, I enjoy computer repair and hardware maintenance, custom Android tinkering, and exploring technical software updates[cite: 1, 2].
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title">Technical & Personal Skills</h2>
+        <div class="skills-grid">
+          
+          <div class="skill-card">
+            <h3>Programming & Systems</h3>
+            <ul>
+              <li>C Programming & System Calls</li>
+              <li>Low-Level Memory Management</li>
+              <li>Data Structures & Algorithms</li>
+              <li>Unix / Linux Command Line</li>
+              <li>Shell Scripting</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Development & Tools</h3>
+            <ul>
+              <li>Git & GitHub Version Control</li>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Software Testing & Debugging</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Hardware, Languages & Strengths</h3>
+            <ul>
+              <li>Bilingual (English & Spanish)[cite: 1]</li>
+              <li>Computer Repair & Hardware Maintenance[cite: 1, 2]</li>
+              <li>Android Custom Configurations & System Maintenance[cite: 2]</li>
+              <li>Caregiving & Social Work Interpersonal Skills[cite: 1]</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-status badge-active">Completed / Active</div>
+            <h3 class="project-title">Holberton Systems & C Work</h3>
+            <p class="project-description">
+              A repository of low-level algorithms, custom C functions, system calls, and data structures built during studies at Holberton Coding School.
+            </p>
+            <div class="project-tags">
+              <span>C</span>
+              <span>Linux</span>
+              <span>Shell</span>
+              <span>Algorithms</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ender325" target="_blank" rel="noopener noreferrer" class="link-btn">
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 (Planned) -->
+          <article class="project-card">
+            <div class="project-status badge-planned">Planned Project</div>
+            <h3 class="project-title">Custom Shell Implementation</h3>
+            <p class="project-description">
+              An upcoming planned project implementing a lightweight Unix command line interpreter in C, handling process management, sub-processes, and environment execution.
+            </p>
+            <div class="project-tags">
+              <span>C</span>
+              <span>Unix</span>
+              <span>System Calls</span>
+              <span>Roadmap</span>
+            </div>
+            <div class="project-links">
+              <span class="planned-label">Status: In Design / Roadmap</span>
+            </div>
+          </article>
+
+          <!-- Project 3 (Planned) -->
+          <article class="project-card">
+            <div class="project-status badge-planned">Planned Project</div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">
+              A clean, accessible, single-page responsive portfolio built with pure standard HTML, CSS, and vanilla JavaScript without external libraries or frameworks.
+            </p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ender325" target="_blank" rel="noopener noreferrer" class="link-btn">
+                Source Code
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+        <p class="contact-subtext">
+          I am actively open to internship, entry-level engineering, and technical opportunities. Feel free to reach out via my professional links or send a message below.
+        </p>
+
+        <div class="contact-wrapper">
+          
+          <!-- Direct Profile Links -->
+          <div class="contact-info">
+            <h3>Connect With Me</h3>
+            <ul class="social-links">
+              <li>
+                <strong>LinkedIn:</strong> 
+                <a href="https://www.linkedin.com/in/kevin-rodriguez-gz/" target="_blank" rel="noopener noreferrer">
+                  kevin-rodriguez-gz
+                </a>
+              </li>
+              <li>
+                <strong>GitHub:</strong> 
+                <a href="https://github.com/ender325" target="_blank" rel="noopener noreferrer">
+                  github.com/ender325
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+              <span class="error-message" id="nameError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+              <span class="error-message" id="emailError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Hello Kevin..."></textarea>
+              <span class="error-message" id="messageError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Kevin Rodríguez. Built with plain HTML, CSS, & JavaScript.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ender325" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/kevin-rodriguez-gz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
